@@ -31,6 +31,7 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Activities\CourseReports\Commands" />
+      <Folder Include="Activities\CourseReports\Domain" />
       <Folder Include="Activities\CourseReports\Queries" />
     </ItemGroup>
 </Project> 
