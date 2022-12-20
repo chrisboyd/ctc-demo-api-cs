@@ -7,17 +7,20 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
+using WYWM.CTC.API.Activities.CourseReports.Services;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 
 [Route(Routes.CourseReport)]
 public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<SingleResponse<Response>>
 {
-    private readonly IMediator _mediator;
+    readonly IMediator _mediator;
+    readonly MongoDbClient _mongoDbClient;
 
-    public GetById(IMediator mediator)
+    public GetById(IMediator mediator, MongoDbClient mongoDbClient)
     {
         _mediator = mediator;
+        _mongoDbClient = mongoDbClient;
     }
         
     [HttpGet]
@@ -32,14 +35,14 @@ public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<Sin
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromRoute] Query request, CancellationToken cancellationToken = new())
     {
         var result = await _mediator.Send(request, cancellationToken);
-       
+        
         if (result.IsValid)
             return new OkObjectResult(result.Item);
         
         return await HandleErrors(result.Errors);
     }
-    
-    private Task<ActionResult> HandleErrors(List<KeyValuePair<string, string[]>> errors)
+
+    Task<ActionResult> HandleErrors(List<KeyValuePair<string, string[]>> errors)
     {
         ActionResult result = null;
         errors.ForEach(error =>

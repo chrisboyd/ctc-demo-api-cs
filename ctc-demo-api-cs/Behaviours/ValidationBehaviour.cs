@@ -12,8 +12,8 @@ namespace WYWM.CTC.API.Behaviours;
 public class ValidationBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TResponse : class where TRequest : IRequest<TResponse>
 {
-    private readonly IEnumerable<IValidator<TRequest>> _validators;
-    private readonly ILogger _logger;
+    readonly IEnumerable<IValidator<TRequest>> _validators;
+    readonly ILogger _logger;
 
     public ValidationBehaviour(IEnumerable<IValidator<TRequest>> validators, ILogger logger)
     {

@@ -8,9 +8,9 @@ namespace WYWM.CTC.API.Helpers;
 
 public class JsonPatchDocumentFilter : IDocumentFilter
 {
-    private const string JsonPatchDocument = "JsonPatchDocument";
-    private const string JsonPatchApplication = "application/json-patch+json";
-    private const string Operation = "Operation";
+    const string JsonPatchDocument = "JsonPatchDocument";
+    const string JsonPatchApplication = "application/json-patch+json";
+    const string Operation = "Operation";
 
     public void Apply(OpenApiDocument swaggerDoc, DocumentFilterContext context)
     {

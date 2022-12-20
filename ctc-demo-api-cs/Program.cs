@@ -3,8 +3,12 @@ using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Http;
 using Microsoft.OpenApi.Models;
+using MongoDB.Driver;
 using Serilog;
+using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
+using WYWM.CTC.API.Activities.CourseReports.Services;
 using WYWM.CTC.API.Behaviours;
 using WYWM.CTC.API.Helpers;
 using WYWM.CTC.API.Middleware;
@@ -31,6 +35,8 @@ builder.Services.AddSwaggerGen(c =>
     c.EnableAnnotations();
 });
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
+builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
+builder.Services.AddSingleton<MongoDbClient>();
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 builder.Services.AddMediatR(typeof(Program))
     .AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>))
