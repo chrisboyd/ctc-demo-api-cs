@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
-using Api.Activities;
 using Ardalis.ApiEndpoints;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -10,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.Activities.Resource.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
 
 [Route(Routes.CourseReport)]
 public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>
@@ -27,7 +26,7 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         Summary = "UpdateById",
         Description = "UpdateById",
         OperationId = "b48f45c5-5fa8-4e7e-b4f1-0c0d536dcee6",
-        Tags = new[] { Routes.CourseReport })
+        Tags = new[] { Activities.Routes.CourseReport })
     ]
     [ProducesResponseType(StatusCodes.Status201Created)]
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromBody] Command request, CancellationToken cancellationToken = new())
@@ -35,7 +34,7 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         var result = await _mediator.Send(request, cancellationToken);
         
         if (result.IsValid)
-            return new CreatedResult(new Uri(Routes.CourseReport, UriKind.Relative), new { result.Item });
+            return new CreatedResult(new Uri(Activities.Routes.CourseReport, UriKind.Relative), new { result.Item });
 
         return await HandleErrors(result.Errors);
     }
