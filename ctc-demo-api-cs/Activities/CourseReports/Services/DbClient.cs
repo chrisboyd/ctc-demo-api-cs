@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
@@ -8,11 +9,11 @@ using WYWM.CTC.API.Infrastructure;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Services;
 
-public class MongoDbClient : IMongoDbClient
+public class DbClient : IDbClient
 {
     private readonly IMongoCollection<PerformanceObjective> _poCollection;
 
-    public MongoDbClient(IOptions<MongoDbSettings> mongoDbSettings)
+    public DbClient(IOptions<MongoDbSettings> mongoDbSettings)
     {
         var client = new MongoClient(mongoDbSettings.Value.ConnectionUri);
         var database = client.GetDatabase(mongoDbSettings.Value.DatabaseName);
@@ -29,5 +30,10 @@ public class MongoDbClient : IMongoDbClient
         var filter = Builders<PerformanceObjective>.Filter.Eq(x => x.Id, new ObjectId(id));
         var result = await _poCollection.FindAsync(filter);
         return await result.FirstOrDefaultAsync();
+    }
+
+    public Task<PerformanceObjective> UpdateByIdAsync(string id)
+    {
+        throw new NotImplementedException();
     }
 }

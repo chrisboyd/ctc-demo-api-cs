@@ -1,5 +1,4 @@
 using MongoDB.Bson;
-using MongoDB.Bson.Serialization.Attributes;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Domain;
 

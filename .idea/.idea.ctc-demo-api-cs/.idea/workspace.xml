@@ -5,11 +5,23 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="feat: working GetById">
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: update namespace&#10;&#10;Command was in the Command/Command folder">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Response.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Validator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IMongoDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/SampleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/SampleController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +31,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64277dff601943485f1ce8e1d4b72d961f81f957ac2be4877a778a938ba582c/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1f68ef86315497c7b39ddb155d5cf3ace964abca69857f9943cd58479799/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Middleware/ExceptionHandlingMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
@@ -38,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -99,7 +114,7 @@
       <workItem from="1671486817283" duration="128000" />
       <workItem from="1671486954651" duration="7975000" />
       <workItem from="1672677807704" duration="39000" />
-      <workItem from="1672677861525" duration="7803000" />
+      <workItem from="1672677861525" duration="9600000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -150,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672686736541</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add UpdateById Command">
+      <created>1672687913667</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1672687913667</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fix: update namespace&#10;&#10;Command was in the Command/Command folder">
+      <created>1672687990283</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1672687990283</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,70 +199,47 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="feat: add model and mongodb settings" />
     <MESSAGE value="feat: add mongodb connection" />
     <MESSAGE value="feat: validate id&#10;&#10;getbyid requires id to not be empty and to be a valid mongodb ObjectId" />
     <MESSAGE value="feat: get doc by id full pipeline&#10;&#10;Completed the full get by id code pipeline. Still to test" />
     <MESSAGE value="feat: working GetById" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: working GetById" />
+    <MESSAGE value="feat: add UpdateById Command" />
+    <MESSAGE value="fix: update namespace&#10;&#10;Command was in the Command/Command folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: update namespace&#10;&#10;Command was in the Command/Command folder" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs</url>
-          <line>23</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.Handler.cs" initialLine="23" containingFunctionPresentation="method 'Handle'">
-            <startOffsets>
-              <option value="680" />
-            </startOffsets>
-            <endOffsets>
-              <option value="745" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs</url>
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs</url>
           <line>28</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\MongoDbClient.cs" initialLine="28" containingFunctionPresentation="method 'FindByIdAsync'">
             <startOffsets>
-              <option value="1011" />
-              <option value="1070" />
+              <option value="985" />
+              <option value="1044" />
             </startOffsets>
             <endOffsets>
-              <option value="1094" />
-              <option value="1074" />
+              <option value="1068" />
+              <option value="1048" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs</url>
-          <line>36</line>
+          <line>35</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="36" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
-              <option value="1265" />
+              <option value="1211" />
             </startOffsets>
             <endOffsets>
-              <option value="1284" />
+              <option value="1230" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.Handler.cs" initialLine="26" containingFunctionPresentation="method 'Handle'">
-            <startOffsets>
-              <option value="772" />
-            </startOffsets>
-            <endOffsets>
-              <option value="846" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

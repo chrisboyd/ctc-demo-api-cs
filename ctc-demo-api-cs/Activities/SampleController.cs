@@ -9,16 +9,16 @@ namespace WYWM.CTC.API.Activities;
 [Route(Routes.Sample)]
 public class SampleController : ControllerBase
 {
-    private readonly IMongoDbClient _mongoDbClient;
+    private readonly IDbClient _dbClient;
 
-    public SampleController(IMongoDbClient mongoDbClient)
+    public SampleController(IDbClient dbClient)
     {
-        _mongoDbClient = mongoDbClient;
+        _dbClient = dbClient;
     }
 
     [HttpGet]
     public async Task<List<PerformanceObjective>> Get()
     {
-        return await _mongoDbClient.GetAsync();
+        return await _dbClient.GetAsync();
     }
 }

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using MediatR;
 using Threenine.ApiResponse;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.Activities.Resource.Commands.UpdateById;
 
 public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 {

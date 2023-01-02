@@ -1,6 +1,5 @@
 using AutoMapper;
-
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.Activities.Resource.Commands.UpdateById;
 
 public class Mapping: Profile
 {

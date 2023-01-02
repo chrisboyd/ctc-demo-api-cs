@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
-using WYWM.CTC.API.Activities.CourseReports.Services;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Api.Activities;
 using Ardalis.ApiEndpoints;
 using MediatR;
 using Microsoft.AspNetCore.Http;
@@ -9,7 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.Activities.Resource.Commands.UpdateById;
 
 [Route(Routes.CourseReport)]
 public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>
@@ -25,7 +26,7 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
     [SwaggerOperation(
         Summary = "UpdateById",
         Description = "UpdateById",
-        OperationId = "e2e4e1d0-d60b-4160-89d5-3da09027cbe3",
+        OperationId = "b48f45c5-5fa8-4e7e-b4f1-0c0d536dcee6",
         Tags = new[] { Routes.CourseReport })
     ]
     [ProducesResponseType(StatusCodes.Status201Created)]
