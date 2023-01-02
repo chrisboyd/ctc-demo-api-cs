@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
 
 [Route(Routes.CourseReport)]
 public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>

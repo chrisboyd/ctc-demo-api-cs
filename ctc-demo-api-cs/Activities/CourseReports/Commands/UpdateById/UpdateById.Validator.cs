@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
 
 public class Validator : AbstractValidator<Command>
 {
