@@ -10,10 +10,10 @@ namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 
 public class Handler : IRequestHandler<Query, SingleResponse<Response>>
 {
-    private readonly IMongoDbClient _mongoClient;
+    private readonly MongoDbClient _mongoClient;
     private readonly IMapper _mapper;
 
-    public Handler(IMongoDbClient mongoClient,IMapper mapper)
+    public Handler(MongoDbClient mongoClient,IMapper mapper)
     {
         _mongoClient = mongoClient;
         _mapper = mapper;
@@ -22,6 +22,8 @@ public class Handler : IRequestHandler<Query, SingleResponse<Response>>
     public async Task<SingleResponse<Response>> Handle(Query request, CancellationToken cancellationToken)
     {
         var perfObjective = await _mongoClient.FindByIdAsync(request.ID);
+        
+        
         return new SingleResponse<Response>(_mapper.Map<Response>(perfObjective));
     }
 }
