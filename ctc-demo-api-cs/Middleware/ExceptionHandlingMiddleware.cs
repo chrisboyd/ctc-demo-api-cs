@@ -21,7 +21,7 @@ internal class ExceptionHandlingMiddleware : IMiddleware
         }
     }
 
-    static async Task HandleException(HttpContext httpContext, Exception exception)
+    private static async Task HandleException(HttpContext httpContext, Exception exception)
     {
         var statusCode = GetStatusCode(exception);
 
@@ -40,7 +40,7 @@ internal class ExceptionHandlingMiddleware : IMiddleware
         await httpContext.Response.WriteAsync(JsonSerializer.Serialize(response));
     }
 
-    static string GetTitle(Exception exception) =>
+    private static string GetTitle(Exception exception) =>
         exception switch
         {
             NotFoundException nf => nf.Title,
@@ -48,7 +48,7 @@ internal class ExceptionHandlingMiddleware : IMiddleware
             _ => "Server Error"
         };
 
-    static int GetStatusCode(Exception exception) =>
+    private static int GetStatusCode(Exception exception) =>
         exception switch
         {
             NotFoundException => StatusCodes.Status404NotFound,
@@ -56,7 +56,7 @@ internal class ExceptionHandlingMiddleware : IMiddleware
         };
 
 
-    static IReadOnlyDictionary<string, string[]> GetErrors(Exception exception)
+    private static IReadOnlyDictionary<string, string[]> GetErrors(Exception exception)
     {
         IReadOnlyDictionary<string, string[]> errors = null;
 

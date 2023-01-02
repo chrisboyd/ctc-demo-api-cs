@@ -40,7 +40,7 @@ public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<Sin
         return await HandleErrors(result.Errors);
     }
 
-    Task<ActionResult> HandleErrors(List<KeyValuePair<string, string[]>> errors)
+    private Task<ActionResult> HandleErrors(List<KeyValuePair<string, string[]>> errors)
     {
         ActionResult result = null;
         errors.ForEach(error =>

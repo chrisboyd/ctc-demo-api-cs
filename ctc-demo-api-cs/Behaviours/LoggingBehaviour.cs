@@ -11,7 +11,7 @@ namespace WYWM.CTC.API.Behaviours;
 public class LoggingBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
     where TRequest : IRequest<TResponse>
 {
-    readonly ILogger _logger;
+    private readonly ILogger _logger;
 
     public LoggingBehaviour(ILogger logger)
     {

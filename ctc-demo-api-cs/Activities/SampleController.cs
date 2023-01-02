@@ -9,7 +9,7 @@ namespace WYWM.CTC.API.Activities;
 [Route(Routes.Sample)]
 public class SampleController : ControllerBase
 {
-    readonly MongoDbClient _mongoDbClient;
+    private readonly MongoDbClient _mongoDbClient;
 
     public SampleController(MongoDbClient mongoDbClient)
     {

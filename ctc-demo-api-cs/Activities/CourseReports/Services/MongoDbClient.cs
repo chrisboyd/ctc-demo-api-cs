@@ -10,7 +10,7 @@ namespace WYWM.CTC.API.Activities.CourseReports.Services;
 
 public class MongoDbClient : IMongoDbClient
 {
-    readonly IMongoCollection<PerformanceObjective> _poCollection;
+    private readonly IMongoCollection<PerformanceObjective> _poCollection;
 
     public MongoDbClient(IOptions<MongoDbSettings> mongoDbSettings)
     {
@@ -22,5 +22,12 @@ public class MongoDbClient : IMongoDbClient
     public async Task<List<PerformanceObjective>> GetAsync()
     {
         return await _poCollection.Find(new BsonDocument()).ToListAsync();
+    }
+
+    public async Task<PerformanceObjective> FindByIdAsync(string id)
+    {
+        var filter = Builders<PerformanceObjective>.Filter.Eq(x => x.Id, new ObjectId(id));
+        var result = await _poCollection.FindAsync(filter);
+        return await result.FirstOrDefaultAsync();
     }
 }
