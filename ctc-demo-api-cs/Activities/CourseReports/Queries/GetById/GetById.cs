@@ -14,16 +14,14 @@ namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 [Route(Routes.CourseReport)]
 public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<SingleResponse<Response>>
 {
-    readonly IMediator _mediator;
-    readonly MongoDbClient _mongoDbClient;
+    private readonly IMediator _mediator;
 
-    public GetById(IMediator mediator, MongoDbClient mongoDbClient)
+    public GetById(IMediator mediator)
     {
         _mediator = mediator;
-        _mongoDbClient = mongoDbClient;
     }
         
-    [HttpGet]
+    [HttpGet("{id}")]
     [SwaggerOperation(
         Summary = "GetById",
         Description = "GetById",
