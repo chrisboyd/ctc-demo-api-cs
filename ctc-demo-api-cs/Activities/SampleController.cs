@@ -9,9 +9,9 @@ namespace WYWM.CTC.API.Activities;
 [Route(Routes.Sample)]
 public class SampleController : ControllerBase
 {
-    private readonly MongoDbClient _mongoDbClient;
+    private readonly IMongoDbClient _mongoDbClient;
 
-    public SampleController(MongoDbClient mongoDbClient)
+    public SampleController(IMongoDbClient mongoDbClient)
     {
         _mongoDbClient = mongoDbClient;
     }

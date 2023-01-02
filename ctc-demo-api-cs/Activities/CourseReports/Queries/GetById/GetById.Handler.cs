@@ -10,10 +10,10 @@ namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 
 public class Handler : IRequestHandler<Query, SingleResponse<Response>>
 {
-    private readonly MongoDbClient _mongoClient;
+    private readonly IMongoDbClient _mongoClient;
     private readonly IMapper _mapper;
 
-    public Handler(MongoDbClient mongoClient,IMapper mapper)
+    public Handler(IMongoDbClient mongoClient,IMapper mapper)
     {
         _mongoClient = mongoClient;
         _mapper = mapper;

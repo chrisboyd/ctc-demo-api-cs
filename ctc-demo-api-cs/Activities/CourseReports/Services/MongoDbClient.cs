@@ -4,7 +4,7 @@ using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using WYWM.CTC.API.Activities.CourseReports.Domain;
-using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
+using WYWM.CTC.API.Infrastructure;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Services;
 

@@ -7,10 +7,10 @@ using Microsoft.Extensions.Http;
 using Microsoft.OpenApi.Models;
 using MongoDB.Driver;
 using Serilog;
-using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
 using WYWM.CTC.API.Activities.CourseReports.Services;
 using WYWM.CTC.API.Behaviours;
 using WYWM.CTC.API.Helpers;
+using WYWM.CTC.API.Infrastructure;
 using WYWM.CTC.API.Middleware;
 
 Log.Logger = new LoggerConfiguration()
@@ -36,7 +36,7 @@ builder.Services.AddSwaggerGen(c =>
 });
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
-builder.Services.AddSingleton<MongoDbClient>();
+builder.Services.AddSingleton<IMongoDbClient, MongoDbClient>();
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 builder.Services.AddMediatR(typeof(Program))
     .AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>))

@@ -1,4 +1,4 @@
-namespace WYWM.CTC.API.Activities.CourseReports.Infrastructure;
+namespace WYWM.CTC.API.Infrastructure;
 
 public class MongoDbSettings
 {
