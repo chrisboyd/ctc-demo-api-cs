@@ -21,7 +21,7 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         _mediator = mediator;
     }
     
-    [HttpPatch]
+    [HttpPatch("id")]
     [SwaggerOperation(
         Summary = "UpdateById",
         Description = "UpdateById",
