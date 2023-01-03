@@ -39,10 +39,10 @@ public class DbClient : IDbClient
         var updateDefinition = Builders<PerformanceObjective>.Update
             .Set(x => x.Name, updatePerfObjDto.Name);
         var result = await _poCollection.UpdateOneAsync(updateFilter, updateDefinition);
-        if (!result.IsAcknowledged)
+        if (result.IsAcknowledged && result.ModifiedCount == 0)
         {
             throw new NotFoundException("Document not found", 
-                $"Document with id: {id} could not be updated");
+                $"Document with id: {id} could not be found");
         }
 
         return result.IsAcknowledged;

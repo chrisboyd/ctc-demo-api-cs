@@ -28,14 +28,14 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         OperationId = "b48f45c5-5fa8-4e7e-b4f1-0c0d536dcee6",
         Tags = new[] { Routes.CourseReport })
     ]
-    [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response))]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromRoute] Command request, 
         CancellationToken cancellationToken = new())
     {
         var result = await _mediator.Send(request, cancellationToken);
 
         if (result.IsValid)
-            return new OkObjectResult(result.Item);
+            return new NoContentResult();
 
         return await HandleErrors(result.Errors);
     }

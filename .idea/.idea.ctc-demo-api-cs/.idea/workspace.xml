@@ -5,17 +5,9 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/UpdatePerfObjDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: patch works, has issues&#10;&#10;Patch will update the name of the PO, but is currently failing on the mapping response.&#10;&#10;Also need to remove the response object and return 204">
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +22,16 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
@@ -70,6 +72,8 @@
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Post/Post.Handler.cs" root0="SKIP_HIGHLIGHTING" />
@@ -248,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672781685891</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="fix: patch works, has issues&#10;&#10;Patch will update the name of the PO, but is currently failing on the mapping response.&#10;&#10;Also need to remove the response object and return 204">
+      <created>1672789626637</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1672789626637</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +291,8 @@
     <MESSAGE value="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references" />
     <MESSAGE value="feat: add UpdateById Command" />
     <MESSAGE value="feat: add patch outline&#10;&#10;Throwing an error on the Swagger, related the the patch helper?" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add patch outline&#10;&#10;Throwing an error on the Swagger, related the the patch helper?" />
+    <MESSAGE value="fix: patch works, has issues&#10;&#10;Patch will update the name of the PO, but is currently failing on the mapping response.&#10;&#10;Also need to remove the response object and return 204" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: patch works, has issues&#10;&#10;Patch will update the name of the PO, but is currently failing on the mapping response.&#10;&#10;Also need to remove the response object and return 204" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -306,7 +318,7 @@
               <option value="1322" />
             </startOffsets>
             <endOffsets>
-              <option value="1393" />
+              <option value="1407" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
@@ -316,15 +328,15 @@
           <line>34</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
-              <option value="1109" />
+              <option value="1091" />
             </startOffsets>
             <endOffsets>
-              <option value="1171" />
+              <option value="1153" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Patch/Patch.cs</url>
           <line>33</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\PerformanceObjectives\Commands\Patch\Patch.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
@@ -337,7 +349,7 @@
           </properties>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Patch/Patch.Handler.cs</url>
           <line>21</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\PerformanceObjectives\Commands\Patch\Patch.Handler.cs" initialLine="21" containingFunctionPresentation="method 'Handle'">
@@ -350,7 +362,7 @@
           </properties>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs</url>
           <line>9</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Mapping.cs" initialLine="9" containingFunctionPresentation="constructor 'Mapping'">
@@ -358,12 +370,12 @@
               <option value="208" />
             </startOffsets>
             <endOffsets>
-              <option value="362" />
+              <option value="358" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs</url>
           <line>25</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Handler.cs" initialLine="25" containingFunctionPresentation="method 'Handle'">

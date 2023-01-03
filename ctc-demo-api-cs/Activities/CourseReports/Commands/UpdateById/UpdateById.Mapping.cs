@@ -7,7 +7,7 @@ public class Mapping: Profile
 {
     public Mapping()
     {
-        CreateMap<PerformanceObjective, Response>(MemberList.None)
+        CreateMap<UpdatePerfObjDto, Response>(MemberList.None)
             .ForMember(dest => dest.Name, opt
                 => opt.MapFrom(src => src.Name));
     }
