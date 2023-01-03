@@ -10,7 +10,7 @@ public class Mapping : Profile
         CreateMap<PerformanceObjective, Response>(MemberList.None)
             .ForMember(dest => dest.Id, opt
                 => opt.MapFrom(src => src.Id))
-            .ForMember(dest => dest.Title, opt
-                => opt.MapFrom(src => src.PoName));
+            .ForMember(dest => dest.Name, opt
+                => opt.MapFrom(src => src.Name));
     }
 }

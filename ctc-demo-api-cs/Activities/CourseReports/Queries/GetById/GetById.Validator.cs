@@ -8,8 +8,8 @@ public class Validator : AbstractValidator<Query>
     public Validator()
     {
         var objectId = new ObjectId();
-        RuleFor(x => x.ID).NotEmpty();
-        RuleFor(x => ObjectId.TryParse(x.ID, out objectId))
+        RuleFor(x => x.Id).NotEmpty();
+        RuleFor(x => ObjectId.TryParse(x.Id, out objectId))
             .Equal(true)
             .WithMessage("{PropertyValue} Provided id was not a valid MongoDB ObjectID");
     }

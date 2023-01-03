@@ -6,7 +6,7 @@ public class PerformanceObjective
 {
     // [BsonId]
     // [BsonRepresentation(BsonType.ObjectId)]
-    public ObjectId Id { get; set; }
+    public BsonObjectId Id { get; set; }
 
-    public string PoName { get; set; } = null!;
+    public string Name { get; set; } = null!;
 }

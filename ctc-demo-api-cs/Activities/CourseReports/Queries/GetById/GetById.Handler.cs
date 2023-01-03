@@ -2,6 +2,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
+using MongoDB.Bson;
 using Threenine.ApiResponse;
 using WYWM.CTC.API.Activities.CourseReports.Services;
 
@@ -20,7 +21,7 @@ public class Handler : IRequestHandler<Query, SingleResponse<Response>>
 
     public async Task<SingleResponse<Response>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var perfObjective = await _client.FindByIdAsync(request.ID);
+        var perfObjective = await _client.FindByIdAsync(request.Id);
         
         return new SingleResponse<Response>(_mapper.Map<Response>(perfObjective));
     }

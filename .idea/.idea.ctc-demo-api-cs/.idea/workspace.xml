@@ -5,14 +5,23 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: update command endpoint&#10;&#10;Incorrect template generation led to Swagger exceptions. Regenerate Command endpoints with the correct directory structure">
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Response.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Validator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Mapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Response.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +29,36 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/076d8eb2296f0aede1aebfab29cf61b0653a746b863abc9f1725e5ca94daf/IDocumentFilter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1370dce7cea63a786d5415be2ff6a77ae9e6b3a924baa1c989452c5bd321b5/ReferenceType.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c425811cd21ab63d240d07b714ba2e2a548062526666688f4eea2efed2d1d9/UpdateResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64277dff601943485f1ce8e1d4b72d961f81f957ac2be4877a778a938ba582c/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/77fc393f2a9beaeee7b2142a5831b298b83cb73392c226b366c180faf48a7d/ObjectResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8583cb77a276fb9dbb7a8c129291eddb743424cae4f212cdbb0b092cd44115e/IMongoCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1f68ef86315497c7b39ddb155d5cf3ace964abca69857f9943cd58479799/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e16c23cc9686a01eb14f63a392cf426591d34feee029a4ebcd11faa1ef2e52/CreatedResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,6 +86,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.24545455",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
@@ -106,7 +143,7 @@
       <workItem from="1671486817283" duration="128000" />
       <workItem from="1671486954651" duration="7975000" />
       <workItem from="1672677807704" duration="39000" />
-      <workItem from="1672677861525" duration="9901000" />
+      <workItem from="1672677861525" duration="14666000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -178,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672689922032</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references">
+      <created>1672690163157</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672690163157</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -208,27 +252,28 @@
     <MESSAGE value="feat: add UpdateById Command" />
     <MESSAGE value="fix: update namespace&#10;&#10;Command was in the Command/Command folder" />
     <MESSAGE value="fix: update command endpoint&#10;&#10;Incorrect template generation led to Swagger exceptions. Regenerate Command endpoints with the correct directory structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: update command endpoint&#10;&#10;Incorrect template generation led to Swagger exceptions. Regenerate Command endpoints with the correct directory structure" />
+    <MESSAGE value="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs</url>
           <line>28</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\MongoDbClient.cs" initialLine="28" containingFunctionPresentation="method 'FindByIdAsync'">
             <startOffsets>
-              <option value="985" />
-              <option value="1044" />
+              <option value="1016" />
+              <option value="1075" />
             </startOffsets>
             <endOffsets>
-              <option value="1068" />
-              <option value="1048" />
+              <option value="1085" />
+              <option value="1079" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+        <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs</url>
           <line>35</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="36" containingFunctionPresentation="method 'HandleAsync'">
@@ -240,6 +285,34 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1066" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1128" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs</url>
+          <line>30</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\DbClient.cs" initialLine="30" containingFunctionPresentation="method 'FindByIdAsync'">
+            <startOffsets>
+              <option value="1016" />
+              <option value="1075" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1085" />
+              <option value="1079" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

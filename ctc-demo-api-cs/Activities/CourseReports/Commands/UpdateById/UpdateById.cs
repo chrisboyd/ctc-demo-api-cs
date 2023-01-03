@@ -21,20 +21,20 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         _mediator = mediator;
     }
     
-    [HttpPost]
+    [HttpPatch]
     [SwaggerOperation(
         Summary = "UpdateById",
         Description = "UpdateById",
         OperationId = "b48f45c5-5fa8-4e7e-b4f1-0c0d536dcee6",
-        Tags = new[] { Activities.Routes.CourseReport })
+        Tags = new[] { Routes.CourseReport })
     ]
-    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromBody] Command request, CancellationToken cancellationToken = new())
     {
         var result = await _mediator.Send(request, cancellationToken);
-        
+
         if (result.IsValid)
-            return new CreatedResult(new Uri(Activities.Routes.CourseReport, UriKind.Relative), new { result.Item });
+            return new OkObjectResult(result.Item);
 
         return await HandleErrors(result.Errors);
     }

@@ -5,6 +5,7 @@ using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using WYWM.CTC.API.Activities.CourseReports.Domain;
+using WYWM.CTC.API.Exceptions;
 using WYWM.CTC.API.Infrastructure;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Services;
@@ -32,8 +33,18 @@ public class DbClient : IDbClient
         return await result.FirstOrDefaultAsync();
     }
 
-    public Task<PerformanceObjective> UpdateByIdAsync(string id)
+    public async Task<bool> UpdateByIdAsync(PerformanceObjective updateDto)
     {
-        throw new NotImplementedException();
+        var updateFilter = Builders<PerformanceObjective>.Filter.Eq("_id", updateDto.Id);
+        var updateDefinition = Builders<PerformanceObjective>.Update
+            .Set(x => x.Name, updateDto.Name);
+        var result = await _poCollection.UpdateOneAsync(updateFilter, updateDefinition);
+        if (!result.IsAcknowledged)
+        {
+            throw new NotFoundException("Document not found", 
+                $"Document with id: {updateDto.Id} could not be updated");
+        }
+
+        return result.IsAcknowledged;
     }
 }
