@@ -5,10 +5,7 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="feat: add UpdateById Command">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
-    </list>
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: re-enable swagger JsonPatch helper" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,6 +54,7 @@
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Middleware/ExceptionHandlingMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -136,7 +134,7 @@
       <workItem from="1671486817283" duration="128000" />
       <workItem from="1671486954651" duration="7975000" />
       <workItem from="1672677807704" duration="39000" />
-      <workItem from="1672677861525" duration="15310000" />
+      <workItem from="1672677861525" duration="15646000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -222,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672705892738</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fix: re-enable swagger JsonPatch helper">
+      <created>1672706774977</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1672706774977</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -253,7 +258,8 @@
     <MESSAGE value="fix: update command endpoint&#10;&#10;Incorrect template generation led to Swagger exceptions. Regenerate Command endpoints with the correct directory structure" />
     <MESSAGE value="fix: template generated multiple Routes constants&#10;&#10;Routes constant file was generated during incorrect template usage, remove unneccessary references" />
     <MESSAGE value="feat: add UpdateById Command" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add UpdateById Command" />
+    <MESSAGE value="fix: re-enable swagger JsonPatch helper" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: re-enable swagger JsonPatch helper" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
