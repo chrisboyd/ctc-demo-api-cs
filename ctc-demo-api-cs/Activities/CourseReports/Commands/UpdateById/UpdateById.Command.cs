@@ -11,5 +11,3 @@ public class Command : IRequest<SingleResponse<Response>>
     [FromRoute(Name = "id")] public string Id { get; set; }
     [FromBody] public PerformanceObjective updatePerfObjDto { get; set; }
 }
-
-
