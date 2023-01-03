@@ -20,18 +20,18 @@ Log.Information("Starting up");
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// builder.Services.AddSwaggerGen();
 builder.Host.UseSerilog((ctx, lc) => lc
     .WriteTo.Console()
     .ReadFrom.Configuration(ctx.Configuration));
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo {Title = "ctc_demo_api_cs", Version = "v1"});
-    c.CustomSchemaIds(x => x.FullName);
-    c.DocumentFilter<JsonPatchDocumentFilter>();
-    c.EnableAnnotations();
-});
+// builder.Services.AddSwaggerGen(c =>
+// {
+//     c.SwaggerDoc("v1", new OpenApiInfo {Title = "ctc_demo_api_cs", Version = "v1"});
+//     c.CustomSchemaIds(x => x.FullName);
+//     c.DocumentFilter<JsonPatchDocumentFilter>();
+//     c.EnableAnnotations();
+// });
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
 builder.Services.AddSingleton<IDbClient, DbClient>();
@@ -48,11 +48,11 @@ var app = builder.Build();
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ctc_demo_api_cs v1"));
-}
+// if (app.Environment.IsDevelopment())
+// {
+//     app.UseSwagger();
+//     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ctc_demo_api_cs v1"));
+// }
 
 app.UseHttpsRedirection();
 

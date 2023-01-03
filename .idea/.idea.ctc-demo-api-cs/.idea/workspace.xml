@@ -5,10 +5,17 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="feat: add patch outline&#10;&#10;Throwing an error on the Swagger, related the the patch helper?">
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/UpdatePerfObjDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Properties/launchSettings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +65,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,6 +74,7 @@
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/MongoDbClient.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Post/Post.Handler.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Middleware/ExceptionHandlingMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Program.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -81,27 +90,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.24545455&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.12045454",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\chris\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\chris\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ctc-demo-api-cs: ctc_demo_api_cs">
     <configuration name="ctc-demo-api-cs: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" />
@@ -290,30 +299,82 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs</url>
-          <line>24</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Handler.cs" initialLine="24" containingFunctionPresentation="method 'Handle'">
-            <startOffsets>
-              <option value="711" />
-            </startOffsets>
-            <endOffsets>
-              <option value="767" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs</url>
           <line>37</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\DbClient.cs" initialLine="37" containingFunctionPresentation="method 'UpdateByIdAsync'">
             <startOffsets>
-              <option value="1308" />
+              <option value="1322" />
             </startOffsets>
             <endOffsets>
-              <option value="1389" />
+              <option value="1393" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1109" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1171" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Patch/Patch.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\PerformanceObjectives\Commands\Patch\Patch.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1089" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1151" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Patch/Patch.Handler.cs</url>
+          <line>21</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\PerformanceObjectives\Commands\Patch\Patch.Handler.cs" initialLine="21" containingFunctionPresentation="method 'Handle'">
+            <startOffsets>
+              <option value="626" />
+            </startOffsets>
+            <endOffsets>
+              <option value="662" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs</url>
+          <line>9</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Mapping.cs" initialLine="9" containingFunctionPresentation="constructor 'Mapping'">
+            <startOffsets>
+              <option value="208" />
+            </startOffsets>
+            <endOffsets>
+              <option value="362" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs</url>
+          <line>25</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Handler.cs" initialLine="25" containingFunctionPresentation="method 'Handle'">
+            <startOffsets>
+              <option value="725" />
+            </startOffsets>
+            <endOffsets>
+              <option value="793" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

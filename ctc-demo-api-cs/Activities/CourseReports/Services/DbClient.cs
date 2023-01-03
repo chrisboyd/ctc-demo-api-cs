@@ -33,16 +33,16 @@ public class DbClient : IDbClient
         return await result.FirstOrDefaultAsync();
     }
 
-    public async Task<bool> UpdateByIdAsync(PerformanceObjective updateDto)
+    public async Task<bool> UpdateByIdAsync(string id, UpdatePerfObjDto updatePerfObjDto)
     {
-        var updateFilter = Builders<PerformanceObjective>.Filter.Eq("_id", updateDto.Id);
+        var updateFilter = Builders<PerformanceObjective>.Filter.Eq("_id", new ObjectId(id));
         var updateDefinition = Builders<PerformanceObjective>.Update
-            .Set(x => x.Name, updateDto.Name);
+            .Set(x => x.Name, updatePerfObjDto.Name);
         var result = await _poCollection.UpdateOneAsync(updateFilter, updateDefinition);
         if (!result.IsAcknowledged)
         {
             throw new NotFoundException("Document not found", 
-                $"Document with id: {updateDto.Id} could not be updated");
+                $"Document with id: {id} could not be updated");
         }
 
         return result.IsAcknowledged;

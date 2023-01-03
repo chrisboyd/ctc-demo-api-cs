@@ -1,3 +1,4 @@
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -22,7 +23,7 @@ public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 
     public async Task<SingleResponse<Response>> Handle(Command request, CancellationToken cancellationToken)
     {
-        await _client.UpdateByIdAsync(request.updatePerfObjDto);
+        await _client.UpdateByIdAsync(request.Id, request.updatePerfObjDto);
         return new SingleResponse<Response>(_mapper.Map<Response>(request.updatePerfObjDto));
     }
 }
