@@ -22,7 +22,7 @@ public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 
     public async Task<SingleResponse<Response>> Handle(Command request, CancellationToken cancellationToken)
     {
-        await _client.UpdateByIdAsync(request.PerformanceObjective);
-        return new SingleResponse<Response>(_mapper.Map<Response>(request.PerformanceObjective));
+        await _client.UpdateByIdAsync(request.updatePerfObjDto);
+        return new SingleResponse<Response>(_mapper.Map<Response>(request.updatePerfObjDto));
     }
 }
