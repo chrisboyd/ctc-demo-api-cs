@@ -29,7 +29,7 @@ builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo {Title = "ctc_demo_api_cs", Version = "v1"});
     c.CustomSchemaIds(x => x.FullName);
-    //c.DocumentFilter<JsonPatchDocumentFilter>();
+    c.DocumentFilter<JsonPatchDocumentFilter>();
     c.EnableAnnotations();
 });
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
