@@ -11,6 +11,8 @@ public class Mapping : Profile
             .ForMember(dest => dest.Id, opt
                 => opt.MapFrom(src => src.Id))
             .ForMember(dest => dest.Name, opt
-                => opt.MapFrom(src => src.Name));
+                => opt.MapFrom(src => src.Name))
+            .ForMember(dest => dest.EvaluationObjectives, opt
+                => opt.MapFrom(src => src.EvaluationObjectives));
     }
 }
