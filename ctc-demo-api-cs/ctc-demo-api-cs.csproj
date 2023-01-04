@@ -32,7 +32,9 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Activities\CourseReports\Commands" />
+      <Folder Include="Activities\CourseReports\Domain" />
       <Folder Include="Activities\CourseReports\Queries" />
+      <Folder Include="Activities\CourseReports\Services" />
       <Folder Include="Activities\PerformanceObjectives\Queries" />
     </ItemGroup>
 </Project> 
