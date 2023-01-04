@@ -8,5 +8,5 @@ public interface IDbClient
 {
     Task<List<PerformanceObjective>> GetAsync();
     Task<PerformanceObjective> FindByIdAsync(string id);
-    Task<bool> UpdateByIdAsync(string id, UpdatePerfObjDto updatePerfObjDto);
+    Task<bool> UpdateByIdAsync(string id, UpdateEvalObjDto updateEvalObjDto);
 }

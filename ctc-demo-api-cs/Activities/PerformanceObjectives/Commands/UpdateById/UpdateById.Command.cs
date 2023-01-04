@@ -9,5 +9,5 @@ namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
 public class Command : IRequest<SingleResponse<Response>>
 {
     [FromRoute(Name = "id")] public string Id { get; set; }
-    [FromBody] public UpdatePerfObjDto updatePerfObjDto { get; set; }
+    [FromBody] public UpdateEvalObjDto UpdateEvalObjDto { get; set; }
 }

@@ -31,6 +31,6 @@
         <PackageReference Include="Threenine.Data" Version="3.2.14" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Activities\CourseReports\Queries" />
+      <Folder Include="Activities\PerformanceObjectives\Queries" />
     </ItemGroup>
 </Project> 

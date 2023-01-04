@@ -11,7 +11,7 @@ using Threenine.ApiResponse;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
 
-[Route(Routes.CourseReport)]
+[Route(Routes.PerformanceObjective)]
 public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>
 {
     private readonly IMediator _mediator;
@@ -26,16 +26,16 @@ public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResul
         Summary = "UpdateById",
         Description = "UpdateById",
         OperationId = "b48f45c5-5fa8-4e7e-b4f1-0c0d536dcee6",
-        Tags = new[] { Routes.CourseReport })
+        Tags = new[] { Routes.PerformanceObjective })
     ]
-    [ProducesResponseType(StatusCodes.Status204NoContent)]
+    [ProducesResponseType(StatusCodes.Status200OK)]
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromRoute] Command request, 
         CancellationToken cancellationToken = new())
     {
         var result = await _mediator.Send(request, cancellationToken);
 
         if (result.IsValid)
-            return new NoContentResult();
+            return new OkObjectResult(result.Item);
 
         return await HandleErrors(result.Errors);
     }
