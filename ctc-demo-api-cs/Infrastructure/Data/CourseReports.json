@@ -1,0 +1,25 @@
+﻿[
+  {
+    "Name": "CTC-Default-PO",
+    "EvaluationObjectives": [
+      {
+        "Name": "EO 1"
+      },
+      {
+        "Name": "EO 2"
+      },
+      {
+        "Name": "EO 3"
+      },
+      {
+        "Name": "EO 4"
+      },
+      {
+        "Name": "EO 5"
+      },
+      {
+        "Name": "EO 6"
+      }
+    ]
+  }
+]
