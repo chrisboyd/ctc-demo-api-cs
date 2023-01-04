@@ -5,7 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Serilog;
-using WYWM.CTC.API.Activities.CourseReports.Services;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 using WYWM.CTC.API.Behaviours;
 using WYWM.CTC.API.Helpers;
 using WYWM.CTC.API.Infrastructure;

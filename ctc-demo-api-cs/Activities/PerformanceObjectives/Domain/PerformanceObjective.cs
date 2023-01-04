@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using MongoDB.Bson;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Domain;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
 public class PerformanceObjective
 {

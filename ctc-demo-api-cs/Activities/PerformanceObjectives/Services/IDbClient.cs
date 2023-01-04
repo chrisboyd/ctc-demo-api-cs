@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Services;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
 public interface IDbClient
 {

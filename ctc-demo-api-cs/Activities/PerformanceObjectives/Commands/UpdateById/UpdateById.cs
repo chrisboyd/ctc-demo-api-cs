@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -9,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 using Threenine.ApiResponse;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 [Route(Routes.PerformanceObjective)]
 public class UpdateById : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>

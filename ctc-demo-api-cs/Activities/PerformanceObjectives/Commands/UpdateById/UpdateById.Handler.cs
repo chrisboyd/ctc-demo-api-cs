@@ -1,14 +1,11 @@
-using System;
 using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
-using MongoDB.Driver;
 using Threenine.ApiResponse;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
-using WYWM.CTC.API.Activities.CourseReports.Services;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 {

@@ -1,14 +1,13 @@
-using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 using WYWM.CTC.API.Exceptions;
 using WYWM.CTC.API.Infrastructure;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Services;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
 public class DbClient : IDbClient
 {

@@ -1,8 +1,7 @@
-
 using System.Collections.Generic;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Queries.GetById;
 
 public class Response
 {

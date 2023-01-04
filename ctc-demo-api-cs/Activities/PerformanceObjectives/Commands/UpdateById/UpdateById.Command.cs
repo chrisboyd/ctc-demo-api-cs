@@ -1,10 +1,9 @@
 using MediatR;
-using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 using Threenine.ApiResponse;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 public class Command : IRequest<SingleResponse<Response>>
 {

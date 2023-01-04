@@ -2,11 +2,10 @@ using System.Threading;
 using System.Threading.Tasks;
 using AutoMapper;
 using MediatR;
-using MongoDB.Bson;
 using Threenine.ApiResponse;
-using WYWM.CTC.API.Activities.CourseReports.Services;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Queries.GetById;
 
 public class Handler : IRequestHandler<Query, SingleResponse<Response>>
 {

@@ -1,7 +1,4 @@
-using System.Collections.Generic;
-using WYWM.CTC.API.Activities.CourseReports.Domain;
-
-namespace WYWM.CTC.API.Activities.CourseReports.Commands.UpdateById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 public class Response
 {

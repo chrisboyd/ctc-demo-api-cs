@@ -1,7 +1,7 @@
 using FluentValidation;
 using MongoDB.Bson;
 
-namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Queries.GetById;
 
 public class Validator : AbstractValidator<Query>
 {

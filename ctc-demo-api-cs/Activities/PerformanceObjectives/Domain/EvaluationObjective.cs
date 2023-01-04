@@ -1,6 +1,4 @@
-﻿using MongoDB.Bson;
-
-namespace WYWM.CTC.API.Activities.CourseReports.Domain;
+﻿namespace WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
 public class EvaluationObjective
 {
