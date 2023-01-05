@@ -26,4 +26,20 @@ public class CourseReportRepository : ICourseReportRepository
         
         return result;
     }
+
+    public async Task<CourseReport> SaveAsync(SaveCourseReportDto saveCourseReportDto)
+    {
+        var courseReport = new CourseReport
+        {
+            InstructorEmail = saveCourseReportDto.InstructorEmail,
+            StudentEmail = saveCourseReportDto.StudentEmail,
+            Grade = saveCourseReportDto.Grade,
+            PerformanceObjectiveName = saveCourseReportDto.PerformanceObjectiveName,
+            ResultsId = saveCourseReportDto.ResultsId
+        };
+       _context.CourseReports.Add(courseReport);
+       await _context.SaveChangesAsync();
+
+       return courseReport;
+    }
 }

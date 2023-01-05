@@ -9,18 +9,18 @@ namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 {
-    private readonly IPerfObjectiveRepository _client;
+    private readonly IPerfObjectiveRepository _repository;
     private readonly IMapper _mapper;
 
-    public Handler(IPerfObjectiveRepository client, IMapper mapper)
+    public Handler(IPerfObjectiveRepository repository, IMapper mapper)
     {
-        _client = client;
+        _repository = repository;
         _mapper = mapper;
     }
 
     public async Task<SingleResponse<Response>> Handle(Command request, CancellationToken cancellationToken)
     {
-        await _client.UpdateByIdAsync(request.Id, request.UpdateEvalObjDto);
+        await _repository.UpdateByIdAsync(request.Id, request.UpdateEvalObjDto);
         return new SingleResponse<Response>(_mapper.Map<Response>(request.UpdateEvalObjDto));
     }
 }
