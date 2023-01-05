@@ -10,7 +10,7 @@ using Threenine.ApiResponse;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetById;
 
-[Route(Routes.CourseReports)]
+[Route(Routes.CourseReport)]
 public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<SingleResponse<Response>>
 {
     private readonly IMediator _mediator;
@@ -20,12 +20,12 @@ public class GetById : EndpointBaseAsync.WithRequest<Query>.WithActionResult<Sin
         _mediator = mediator;
     }
         
-    [HttpGet]
+    [HttpGet("{id}")]
     [SwaggerOperation(
         Summary = "GetById",
         Description = "GetById",
         OperationId = "5dd6a598-21a2-4398-866f-20feb687884e",
-        Tags = new[] { Routes.CourseReports})
+        Tags = new[] { Routes.CourseReport})
     ]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response))]
     [ProducesErrorResponseType(typeof(BadRequestObjectResult))]

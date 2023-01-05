@@ -9,10 +9,10 @@ namespace WYWM.CTC.API.Activities.PerformanceObjectives.Commands.UpdateById;
 
 public class Handler : IRequestHandler<Command, SingleResponse<Response>>
 {
-    private readonly IDbClient _client;
+    private readonly IPerfObjectiveRepository _client;
     private readonly IMapper _mapper;
 
-    public Handler(IDbClient client, IMapper mapper)
+    public Handler(IPerfObjectiveRepository client, IMapper mapper)
     {
         _client = client;
         _mapper = mapper;

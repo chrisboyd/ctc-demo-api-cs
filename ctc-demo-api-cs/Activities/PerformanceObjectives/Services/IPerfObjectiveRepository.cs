@@ -4,7 +4,7 @@ using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
 
 namespace WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
-public interface IDbClient
+public interface IPerfObjectiveRepository
 {
     Task<List<PerformanceObjective>> GetAsync();
     Task<PerformanceObjective> FindByIdAsync(string id);

@@ -5,30 +5,31 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="docs: add default PO&#10;&#10;JSON file that can be loaded via Compass">
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Mapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Domain/UpdateEvalObjDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/DbClient.cs" afterDir="false" />
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/CourseReport.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Infrastructure/CourseReportContext.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Infrastructure/CourseReportsDbInitializer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/ICourseReportRepository.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Migrations/20230105002729_InitialCreate.Designer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Migrations/20230105002729_InitialCreate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Migrations/CourseReportContextModelSnapshot.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Command.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Mapping.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Response.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Validator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/UpdateById/UpdateById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/EvaluationObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Domain/EvaluationObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/PerformanceObjective.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Domain/PerformanceObjective.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/UpdatePerfObjDto.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Handler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Mapping.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Query.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Response.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Validator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/DbClient.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/IDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/IDbClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Mapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Response.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Validator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Queries/GetById/GetById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/DbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/PerfObjectiveRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/IDbClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/IPerfObjectiveRepository.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/Routes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/Routes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/SampleController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Infrastructure/Data/PerformanceObjectiveSample.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Infrastructure/Data/PerformanceObjectiveSample.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Infrastructure/MongoDbSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Infrastructure/MongoDbSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,27 +75,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "XThreadsFramesViewSplitterKey": "0.12064965",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.12064965&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\chris\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\chris\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\chris\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.ctc-demo-api-cs: ctc_demo_api_cs">
     <configuration name="ctc-demo-api-cs: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/ctc-demo-api-cs/ctc-demo-api-cs.csproj" />
@@ -141,7 +142,9 @@
       <workItem from="1672677807704" duration="39000" />
       <workItem from="1672677861525" duration="15310000" />
       <workItem from="1672790433986" duration="120000" />
-      <workItem from="1672790845273" duration="6341000" />
+      <workItem from="1672790845273" duration="7843000" />
+      <workItem from="1672855438950" duration="609000" />
+      <workItem from="1672871687494" duration="4902000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -262,7 +265,42 @@
       <option name="project" value="LOCAL" />
       <updated>1672795276697</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: Working GET and PATCH&#10;&#10;Get and PATCH for PerformanceObjective activity both work.">
+      <created>1672798067504</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1672798067504</updated>
+    </task>
+    <task id="LOCAL-00019" summary="fix: fix solution namespaces&#10;&#10;Updated name of existing activity from coursereports to performanceobjectives, update namespace to match">
+      <created>1672798136835</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1672798136835</updated>
+    </task>
+    <task id="LOCAL-00020" summary="docs: update seeder json filename">
+      <created>1672798373955</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1672798373955</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat: add coursereports query">
+      <created>1672798774478</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1672798774478</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat: add course reports directories">
+      <created>1672853047179</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1672853047179</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +323,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="docs: add default PO&#10;&#10;JSON file that can be loaded via Compass" />
-    <option name="LAST_COMMIT_MESSAGE" value="docs: add default PO&#10;&#10;JSON file that can be loaded via Compass" />
+    <MESSAGE value="feat: Working GET and PATCH&#10;&#10;Get and PATCH for PerformanceObjective activity both work." />
+    <MESSAGE value="fix: fix solution namespaces&#10;&#10;Updated name of existing activity from coursereports to performanceobjectives, update namespace to match" />
+    <MESSAGE value="docs: update seeder json filename" />
+    <MESSAGE value="feat: add coursereports query" />
+    <MESSAGE value="feat: add course reports directories" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add course reports directories" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -295,10 +338,10 @@
           <line>35</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="36" containingFunctionPresentation="method 'HandleAsync'">
             <startOffsets>
-              <option value="1227" />
+              <option value="1241" />
             </startOffsets>
             <endOffsets>
-              <option value="1246" />
+              <option value="1260" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
@@ -306,14 +349,7 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.cs</url>
           <line>34</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
-            <startOffsets>
-              <option value="1100" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1162" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'" />
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
@@ -331,41 +367,72 @@
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Mapping.cs</url>
           <line>9</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Mapping.cs" initialLine="9" containingFunctionPresentation="constructor 'Mapping'">
-            <startOffsets>
-              <option value="208" />
-            </startOffsets>
-            <endOffsets>
-              <option value="357" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Mapping.cs" initialLine="9" containingFunctionPresentation="constructor 'Mapping'" />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs</url>
           <line>25</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Handler.cs" initialLine="25" containingFunctionPresentation="method 'Handle'">
-            <startOffsets>
-              <option value="725" />
-            </startOffsets>
-            <endOffsets>
-              <option value="793" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.Handler.cs" initialLine="25" containingFunctionPresentation="method 'Handle'" />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/DbClient.cs</url>
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Services/PerfObjectiveRepository.cs</url>
           <line>62</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\DbClient.cs" initialLine="54" containingFunctionPresentation="method 'UpdateByIdAsync'">
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\DbClient.cs" initialLine="54" containingFunctionPresentation="method 'UpdateByIdAsync'" />
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.Handler.cs</url>
+          <line>22</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.Handler.cs" initialLine="20" containingFunctionPresentation="method 'Handle'">
             <startOffsets>
-              <option value="2950" />
+              <option value="673" />
             </startOffsets>
             <endOffsets>
-              <option value="2962" />
+              <option value="673" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs</url>
+          <line>33</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1131" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1193" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs</url>
+          <line>17</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\CourseReportRepository.cs" initialLine="9" containingFunctionPresentation="method 'FindByIdAsync'">
+            <startOffsets>
+              <option value="524" />
+            </startOffsets>
+            <endOffsets>
+              <option value="524" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs</url>
+          <line>35</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="35" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1210" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1229" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

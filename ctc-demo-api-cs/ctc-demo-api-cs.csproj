@@ -14,6 +14,11 @@
         <PackageReference Include="FluentValidation" Version="11.2.2" />
         <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
         <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.2.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.1" />
         <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
         <PackageReference Include="Npgsql" Version="6.0.7" />
         <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.7" />
@@ -32,9 +37,10 @@
     </ItemGroup>
     <ItemGroup>
       <Folder Include="Activities\CourseReports\Commands" />
-      <Folder Include="Activities\CourseReports\Domain" />
       <Folder Include="Activities\CourseReports\Queries" />
-      <Folder Include="Activities\CourseReports\Services" />
       <Folder Include="Activities\PerformanceObjectives\Queries" />
+    </ItemGroup>
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Infrastructure\Data\PerformanceObjectiveSample.json" />
     </ItemGroup>
 </Project> 

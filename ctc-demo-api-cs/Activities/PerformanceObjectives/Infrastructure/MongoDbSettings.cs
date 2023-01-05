@@ -1,4 +1,4 @@
-namespace WYWM.CTC.API.Infrastructure;
+namespace WYWM.CTC.API.Activities.PerformanceObjectives.Infrastructure;
 
 public class MongoDbSettings
 {

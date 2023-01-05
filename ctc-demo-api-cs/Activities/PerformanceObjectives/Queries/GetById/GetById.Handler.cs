@@ -9,18 +9,18 @@ namespace WYWM.CTC.API.Activities.PerformanceObjectives.Queries.GetById;
 
 public class Handler : IRequestHandler<Query, SingleResponse<Response>>
 {
-    private readonly IDbClient _client;
+    private readonly IPerfObjectiveRepository _repository;
     private readonly IMapper _mapper;
 
-    public Handler(IDbClient client,IMapper mapper)
+    public Handler(IPerfObjectiveRepository repository,IMapper mapper)
     {
-        _client = client;
+        _repository = repository;
         _mapper = mapper;
     }
 
     public async Task<SingleResponse<Response>> Handle(Query request, CancellationToken cancellationToken)
     {
-        var perfObjective = await _client.FindByIdAsync(request.Id);
+        var perfObjective = await _repository.FindByIdAsync(request.Id);
         
         return new SingleResponse<Response>(_mapper.Map<Response>(perfObjective));
     }

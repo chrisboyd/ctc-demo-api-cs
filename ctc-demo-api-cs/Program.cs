@@ -1,14 +1,18 @@
 using FluentValidation;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using Serilog;
+using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
+using WYWM.CTC.API.Activities.CourseReports.Services;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Infrastructure;
 using WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 using WYWM.CTC.API.Behaviours;
 using WYWM.CTC.API.Helpers;
-using WYWM.CTC.API.Infrastructure;
 using WYWM.CTC.API.Middleware;
 
 Log.Logger = new LoggerConfiguration()
@@ -33,8 +37,14 @@ builder.Host.UseSerilog((ctx, lc) => lc
 //     c.EnableAnnotations();
 // });
 builder.Services.AddTransient<ExceptionHandlingMiddleware>();
+
 builder.Services.Configure<MongoDbSettings>(builder.Configuration.GetSection("MongoDB"));
-builder.Services.AddSingleton<IDbClient, DbClient>();
+builder.Services.AddSingleton<IPerfObjectiveRepository, PerfObjectiveRepository>();
+
+builder.Services.AddDbContext<CourseReportContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CourseReportConnection")));
+builder.Services.AddScoped<ICourseReportRepository, CourseReportRepository>();
+
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 builder.Services.AddMediatR(typeof(Program))
     .AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>))
@@ -45,8 +55,17 @@ builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();
 
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<CourseReportContext>();
+    context.Database.Migrate();
+
+    await CourseReportsDbInitializer.Initialize(context);
+}
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
+
 // Configure the HTTP request pipeline.
 // if (app.Environment.IsDevelopment())
 // {

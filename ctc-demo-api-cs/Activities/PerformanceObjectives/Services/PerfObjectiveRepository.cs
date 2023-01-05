@@ -4,16 +4,16 @@ using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 using WYWM.CTC.API.Activities.PerformanceObjectives.Domain;
+using WYWM.CTC.API.Activities.PerformanceObjectives.Infrastructure;
 using WYWM.CTC.API.Exceptions;
-using WYWM.CTC.API.Infrastructure;
 
 namespace WYWM.CTC.API.Activities.PerformanceObjectives.Services;
 
-public class DbClient : IDbClient
+public class PerfObjectiveRepository : IPerfObjectiveRepository
 {
     private readonly IMongoCollection<PerformanceObjective> _poCollection;
 
-    public DbClient(IOptions<MongoDbSettings> mongoDbSettings)
+    public PerfObjectiveRepository(IOptions<MongoDbSettings> mongoDbSettings)
     {
         var client = new MongoClient(mongoDbSettings.Value.ConnectionUri);
         var database = client.GetDatabase(mongoDbSettings.Value.DatabaseName);
