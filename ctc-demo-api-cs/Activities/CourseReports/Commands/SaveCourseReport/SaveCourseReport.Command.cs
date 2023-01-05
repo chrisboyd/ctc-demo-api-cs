@@ -9,5 +9,3 @@ public class Command : IRequest<SingleResponse<Response>>
 {
      [FromBody] public SaveCourseReportDto SaveCourseReportDto { get; set; }
 }
-
-

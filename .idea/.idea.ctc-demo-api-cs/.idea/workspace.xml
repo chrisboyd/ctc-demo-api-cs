@@ -6,17 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Handler.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Mapping.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Response.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Validator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Domain/SaveCourseReportDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Handler.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Mapping.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Query.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Response.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Validator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/ICourseReportRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/ICourseReportRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Command.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.Command.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +46,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1f68ef86315497c7b39ddb155d5cf3ace964abca69857f9943cd58479799/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e16c23cc9686a01eb14f63a392cf426591d34feee029a4ebcd11faa1ef2e52/CreatedResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +70,7 @@
     "WebServerToolWindowFactoryState": "false",
     "XThreadsFramesViewSplitterKey": "0.05909091",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "preferences.sourceCode",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -131,7 +130,7 @@
       <workItem from="1672790845273" duration="7843000" />
       <workItem from="1672855438950" duration="609000" />
       <workItem from="1672871687494" duration="5117000" />
-      <workItem from="1672878723320" duration="3202000" />
+      <workItem from="1672878723320" duration="8868000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -294,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672878620237</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="feat: Save CourseReport&#10;&#10;Can save a new course report">
+      <created>1672942460956</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1672942460957</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +329,8 @@
     <MESSAGE value="feat: add coursereports query" />
     <MESSAGE value="feat: add course reports directories" />
     <MESSAGE value="feat: working GET for /coursereports&#10;&#10;initializes a mysql database with some sample course reports and can get said course reports" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: working GET for /coursereports&#10;&#10;initializes a mysql database with some sample course reports and can get said course reports" />
+    <MESSAGE value="feat: Save CourseReport&#10;&#10;Can save a new course report" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: Save CourseReport&#10;&#10;Can save a new course report" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -340,12 +347,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/UpdateById/UpdateById.cs</url>
-          <line>34</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Commands\UpdateById\UpdateById.cs" initialLine="33" containingFunctionPresentation="method 'HandleAsync'" />
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Commands/Patch/Patch.cs</url>
@@ -482,6 +483,19 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\CourseReportRepository.cs" initialLine="31" containingFunctionPresentation="method 'SaveAsync'">
+            <startOffsets>
+              <option value="907" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1277" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
