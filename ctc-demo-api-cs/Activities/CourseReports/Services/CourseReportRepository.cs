@@ -1,4 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using MongoDB.Driver.Linq;
 using WYWM.CTC.API.Activities.CourseReports.Domain;
 using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
 using WYWM.CTC.API.Exceptions;
@@ -41,5 +45,19 @@ public class CourseReportRepository : ICourseReportRepository
        await _context.SaveChangesAsync();
 
        return courseReport;
+    }
+
+    public async Task<List<CourseReport>> FindByInstructorAsync(string instructorEmail)
+    {
+        var results = await _context.CourseReports
+            .Where(x => x.InstructorEmail == instructorEmail)
+            .ToListAsync();
+        if (results.Count == 0)
+        {
+            throw new NotFoundException("Not Found",
+                $"Instructor: {instructorEmail} has no course reports");
+        }
+
+        return results;
     }
 }

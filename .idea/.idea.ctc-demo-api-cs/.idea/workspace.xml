@@ -5,14 +5,16 @@
     <projectFile profileName="ctc_demo_api_cs">ctc-demo-api-cs/ctc-demo-api-cs.csproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/PerformanceObjectives/Routes.cs" afterDir="false" />
+    <list default="true" id="c12142a2-b7b7-4d92-b7c7-411b799c3cd0" name="Changes" comment="fix: Update to per-Activity Route&#10;&#10;Template generator uses a Routes.cs file per each Activity.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ctc-demo-api-cs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Commands/SaveCourseReport/SaveCourseReport.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Handler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Handler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Mapping.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Mapping.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Query.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Query.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Response.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Response.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Validator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Validator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Routes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/Routes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/ICourseReportRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/ICourseReportRepository.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,16 +39,23 @@
     <option name="projectConfigVersion" value="5" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/ILViewer/ee86baf185e54d2985c74049d4ce029b1c00/e8/0dca2b4d/02000002.il" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ee86baf185e54d2985c74049d4ce029b1c00/51/3397f0c5/SingleResponse`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ee86baf185e54d2985c74049d4ce029b1c00/90/2f2e349d/BaseResponse.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/076d8eb2296f0aede1aebfab29cf61b0653a746b863abc9f1725e5ca94daf/IDocumentFilter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1370dce7cea63a786d5415be2ff6a77ae9e6b3a924baa1c989452c5bd321b5/ReferenceType.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1c425811cd21ab63d240d07b714ba2e2a548062526666688f4eea2efed2d1d9/UpdateResult.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/22ecaee444ea579d35fbedacd8165d1923a96143d4f5353524c6a192206b2dd7/HttpGetAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/64277dff601943485f1ce8e1d4b72d961f81f957ac2be4877a778a938ba582c/AbstractValidator.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/77fc393f2a9beaeee7b2142a5831b298b83cb73392c226b366c180faf48a7d/ObjectResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7ba0ed402739382c512dc931983952f511b5c3e7a4baca3eb875d41ad3194056/FilterDefinitionBuilder.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ab13b1943729d1d78686058f81cffd2fa13dd79dda3d96ee4ba3f89c4e8417/MongoEnumerable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/b8583cb77a276fb9dbb7a8c129291eddb743424cae4f212cdbb0b092cd44115e/IMongoCollection.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d1f68ef86315497c7b39ddb155d5cf3ace964abca69857f9943cd58479799/ServiceProvider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e16c23cc9686a01eb14f63a392cf426591d34feee029a4ebcd11faa1ef2e52/CreatedResult.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/f4708639776589f5ac2739f6fcbfc67343b1f9dac51cc1dbfdb003eef77cc1c/Monitor.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/chris/repos/ctc-demo-api-cs/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -132,6 +141,7 @@
       <workItem from="1672871687494" duration="5117000" />
       <workItem from="1672878723320" duration="8868000" />
       <workItem from="1672959603055" duration="1390000" />
+      <workItem from="1672964371376" duration="2063000" />
     </task>
     <task id="LOCAL-00001" summary="feat: add base activity&#10;&#10;add getbyid query for the coursereports activity">
       <created>1671487066717</created>
@@ -308,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672959641383</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix: Update to per-Activity Route&#10;&#10;Template generator uses a Routes.cs file per each Activity.">
+      <created>1672964433347</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1672964433347</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +356,8 @@
     <MESSAGE value="feat: working GET for /coursereports&#10;&#10;initializes a mysql database with some sample course reports and can get said course reports" />
     <MESSAGE value="feat: Save CourseReport&#10;&#10;Can save a new course report" />
     <MESSAGE value="feat: add get all CourseReports activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add get all CourseReports activity" />
+    <MESSAGE value="fix: Update to per-Activity Route&#10;&#10;Template generator uses a Routes.cs file per each Activity." />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: Update to per-Activity Route&#10;&#10;Template generator uses a Routes.cs file per each Activity." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -414,19 +432,6 @@
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs</url>
-          <line>17</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\CourseReportRepository.cs" initialLine="9" containingFunctionPresentation="method 'FindByIdAsync'">
-            <startOffsets>
-              <option value="-1" />
-            </startOffsets>
-            <endOffsets>
-              <option value="-1" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetById/GetById.cs</url>
           <line>35</line>
           <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetById\GetById.cs" initialLine="35" containingFunctionPresentation="method 'HandleAsync'">
@@ -494,17 +499,56 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs</url>
-          <line>31</line>
-          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\CourseReportRepository.cs" initialLine="31" containingFunctionPresentation="method 'SaveAsync'">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.Handler.cs</url>
+          <line>27</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetInstructorReports\GetInstructorReports.Handler.cs" initialLine="21" containingFunctionPresentation="method 'Handle'">
             <startOffsets>
-              <option value="907" />
+              <option value="844" />
             </startOffsets>
             <endOffsets>
-              <option value="1277" />
+              <option value="878" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="38" />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Services/CourseReportRepository.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Services\CourseReportRepository.cs" initialLine="51" containingFunctionPresentation="method 'FindByInstructorAsync'">
+            <startOffsets>
+              <option value="1624" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1756" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.cs</url>
+          <line>34</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetInstructorReports\GetInstructorReports.cs" initialLine="34" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1200" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1262" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/ctc-demo-api-cs/Activities/CourseReports/Queries/GetInstructorReports/GetInstructorReports.cs</url>
+          <line>36</line>
+          <properties documentPath="C:\Users\chris\repos\ctc-demo-api-cs\ctc-demo-api-cs\Activities\CourseReports\Queries\GetInstructorReports\GetInstructorReports.cs" initialLine="36" containingFunctionPresentation="method 'HandleAsync'">
+            <startOffsets>
+              <option value="1279" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1298" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

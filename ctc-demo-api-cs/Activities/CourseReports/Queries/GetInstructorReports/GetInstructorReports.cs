@@ -12,7 +12,7 @@ using Threenine.ApiResponse;
 namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetInstructorReports;
 
 [Route(Routes.CourseReports)]
-public class GetInstructorReports : EndpointBaseAsync.WithRequest<Query>.WithActionResult<SingleResponse<Response>>
+public class GetInstructorReports : EndpointBaseAsync.WithRequest<Query>.WithActionResult<ListResponse<Response>>
 {
     private readonly IMediator _mediator;
 
@@ -30,12 +30,12 @@ public class GetInstructorReports : EndpointBaseAsync.WithRequest<Query>.WithAct
     ]
     [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response))]
     [ProducesErrorResponseType(typeof(BadRequestObjectResult))]
-    public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromRoute] Query request, CancellationToken cancellationToken = new())
+    public override async Task<ActionResult<ListResponse<Response>>> HandleAsync([FromQuery] Query request, CancellationToken cancellationToken = new())
     {
         var result = await _mediator.Send(request, cancellationToken);
        
         if (result.IsValid)
-            return new OkObjectResult(result.Item);
+            return new OkObjectResult(result.Items);
         
         return await HandleErrors(result.Errors);
     }

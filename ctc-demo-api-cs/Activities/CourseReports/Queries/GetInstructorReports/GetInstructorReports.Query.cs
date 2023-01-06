@@ -5,9 +5,9 @@ using Threenine.ApiResponse;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Queries.GetInstructorReports;
 
-public class Query : IRequest<SingleResponse<Response>>
+public class Query : IRequest<ListResponse<Response>>
 {
-        
+    [FromQuery(Name = "instructor")] public string InstructorEmail { get; set; }
 }
 
 
