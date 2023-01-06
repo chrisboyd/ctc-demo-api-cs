@@ -2,7 +2,6 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MongoDB.Driver.Linq;
 using WYWM.CTC.API.Activities.CourseReports.Domain;
 using WYWM.CTC.API.Activities.CourseReports.Infrastructure;
 using WYWM.CTC.API.Exceptions;
