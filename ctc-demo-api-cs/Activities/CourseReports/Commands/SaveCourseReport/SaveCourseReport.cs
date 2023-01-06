@@ -11,7 +11,7 @@ using Threenine.ApiResponse;
 
 namespace WYWM.CTC.API.Activities.CourseReports.Commands.SaveCourseReport;
 
-[Route(Routes.CourseReport)]
+[Route(Routes.CourseReports)]
 public class SaveCourseReport : EndpointBaseAsync.WithRequest<Command>.WithActionResult<SingleResponse<Response>>
 {
     private readonly IMediator _mediator;
@@ -26,7 +26,7 @@ public class SaveCourseReport : EndpointBaseAsync.WithRequest<Command>.WithActio
         Summary = "SaveCourseReport",
         Description = "SaveCourseReport",
         OperationId = "7eade9a1-e699-48f9-9d15-611c66997a7b",
-        Tags = new[] { Routes.CourseReport })
+        Tags = new[] { Routes.CourseReports })
     ]
     [ProducesResponseType(StatusCodes.Status201Created)]
     public override async Task<ActionResult<SingleResponse<Response>>> HandleAsync([FromRoute] Command request, 
@@ -35,7 +35,7 @@ public class SaveCourseReport : EndpointBaseAsync.WithRequest<Command>.WithActio
         var result = await _mediator.Send(request, cancellationToken);
         
         if (result.IsValid)
-            return new CreatedResult(new Uri(Routes.CourseReport, UriKind.Relative), new { result.Item });
+            return new CreatedResult(new Uri(Routes.CourseReports, UriKind.Relative), new { result.Item });
 
         return await HandleErrors(result.Errors);
     }

@@ -1,5 +1,5 @@
-namespace Api.Activities;
+namespace WYWM.CTC.API.Activities.CourseReports;
 internal static partial class Routes
 {
-    internal const string CourseReports = "CourseReports";
+    internal const string CourseReports = "coursereport";
 }
